@@ -1,10 +1,5 @@
 package com.ihsanarslan.datastorekoforkotlinmultiplatform
 
-import androidx.compose.runtime.remember
 import androidx.compose.ui.window.ComposeUIViewController
 
-fun MainViewController() = ComposeUIViewController {
-    App(
-        prefs = remember { createDataStore() }
-    )
-}
+fun MainViewController() = ComposeUIViewController { App() }
